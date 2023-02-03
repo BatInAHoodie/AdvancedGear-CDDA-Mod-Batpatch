@@ -17,7 +17,8 @@
     "material": "nanite",
     "flags": [ "TRADER_AVOID", "SHEATH_KNIFE" ],
     "qualities": [ [ "CUT", 3 ], [ "BUTCHER", 20 ] ]
-  },{
+  },
+  {
     "id": "nano_dagger",
     "type": "GENERIC",
     "name": "nanotech dagger",
@@ -35,7 +36,8 @@
     "material": "nanite",
     "flags": [ "STAB", "UNARMED_WEAPON", "TRADER_AVOID", "SHEATH_KNIFE" ],
     "qualities": [ [ "CUT", 4 ], [ "CUT_FINE", 7 ], [ "BUTCHER", 80 ] ]
-  },{
+  },
+  {
     "id": "nano_spear",
     "type": "GENERIC",
     "name": "nanotech spear",
@@ -53,7 +55,8 @@
     "price" : 50000,
     "material": "nanite",
     "flags": [ "TRADER_AVOID", "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR", "STAB", "REACH_ATTACK", "MESSY" ]
-  },{
+  },
+  {
     "abstract": "nanogun",
     "type": "GUN",
     "name": "nanotech gun",
@@ -65,17 +68,17 @@
     "ammo": "nanite_ammo",
     "flags": ["NEVER_JAMS", "NONCONDUCTIVE", "TRADER_AVOID", "WATERPROOF_GUN" ],
     "volume": 1,
-    "bashing": 0,
-    "cutting": 0,
-    "to_hit": 0,
     "durability": 10,
-    "magazine_well" : 1,
     "reload" : 30,
-    "magazines" : [
-      [ "nanite_ammo", [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ] ]
-    ],
-    "valid_mod_locations": [[ "accessories", 2 ],[ "barrel", 1 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "muzzle", 1 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ]]
-  },{
+    "valid_mod_locations": [[ "accessories", 2 ],[ "barrel", 1 ],[ "grip", 1 ],[ "mechanism", 4 ],[ "muzzle", 1 ],[ "rail", 1 ],[ "sights", 1 ],[ "stock", 1 ],[ "underbarrel", 1 ]],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ]
+      }
+	]
+  },
+  {
     "id": "nano_shredder",
     "type": "GUN",
     "name": "nanotech shredder",
@@ -86,7 +89,7 @@
     "skill": "shotgun",
     "ammo": "nanite_ammo",
     "volume": 8,
-    "ranged_damage": 9,
+	"ranged_damage": { "damage_type": "bullet", "amount": 9 },
     "range": 2,
     "dispersion": 400,
     "sight_dispersion": 80,
@@ -95,8 +98,15 @@
     "modes": [
       [ "DEFAULT", "blast", 5, "SIMULTANEOUS" ],
       [ "BURST", "auto", 20 ]
-    ]
-  },{
+    ],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ]
+      }
+	]
+  },
+  {
     "id": "nano_pistol",
     "type": "GUN",
     "name": "nanotech pistol",
@@ -107,7 +117,7 @@
     "price": 250000,
     "skill": "pistol",
     "volume": 4,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "range": 4,
     "dispersion": 60,
     "sight_dispersion": 20,
@@ -117,8 +127,15 @@
       [ "DEFAULT", "semi-auto", 1 ],
       [ "BURST", "burst", 5, "SIMULTANEOUS" ],
       [ "AUTO", "auto", 15 ]
-    ]
-  },{
+    ],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ]
+      }
+	]
+  },
+  {
     "id": "nano_rifle",
     "type": "GUN",
     "name": "nanotech rifle",
@@ -128,7 +145,7 @@
     "weight": 1844,
     "skill": "rifle",
     "volume": 8,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "range": 12,
     "dispersion": 0,
     "sight_dispersion": 0,
@@ -138,8 +155,15 @@
       [ "DEFAULT", "semi-auto", 1 ],
       [ "BURST", "burst", 10, "SIMULTANEOUS" ],
       [ "AUTO", "auto", 25 ]
-    ]
-  },{
+    ],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ]
+      }
+	]
+  },
+  {
     "id": "nano_smg",
     "type": "GUN",
     "name": "nanotech smg",
@@ -150,7 +174,7 @@
     "price": 375000,
     "skill": "smg",
     "volume": 6,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "bullet", "amount": 4 },
     "range": 2,
     "dispersion": 200,
     "sight_dispersion": 20,
@@ -160,8 +184,15 @@
       [ "DEFAULT", "burst", 5, "SIMULTANEOUS" ],
       [ "BURST", "auto", 25 ],
       [ "FULL", "maximum", 50 ]
-    ]
-  },{
+    ],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_dart_mag", "nano_blade_mag", "nano_wire_mag" ]
+      }
+	]
+  },
+  {
     "id": "nano_launcher",
     "type": "GUN",
     "name": "nanotech launcher",
@@ -172,7 +203,7 @@
     "skill": "launcher",
     "ammo": "nanite_deathcloud_ammo",
     "volume": 8,
-    "ranged_damage": 55,
+    "ranged_damage": { "damage_type": "bullet", "amount": 55 },
     "range": 15,
     "dispersion": 800,
     "sight_dispersion": 50,
@@ -184,6 +215,12 @@
     "modes": [
       [ "DEFAULT", "semi-auto", 1 ],
       [ "BLAST", "blast", 5, "SIMULTANEOUS" ]
-    ]
+    ],
+	"pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "item_restriction": [ "nano_deathcloud_mag" ]
+      }
+	]
   }
 ]

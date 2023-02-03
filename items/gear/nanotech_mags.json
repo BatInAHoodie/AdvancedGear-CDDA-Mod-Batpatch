@@ -13,11 +13,10 @@
     "color": "light_gray",
     "ammo_type": "nanite_ammo",
     "default_ammo": "nanite_wire",
-    "capacity": 50,
-    "count": 50,
     "reliability": 10,
     "reload_time": 0,
     "flags": [ "MAG_COMPACT", "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ],
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 50 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -42,11 +41,10 @@
     "color": "light_gray",
     "ammo_type": "nanite_ammo",
     "default_ammo": "nanite_dart",
-    "capacity": 1000,
-    "count": 1000,
     "reliability": 10,
     "reload_time": 0,
     "flags": [ "MAG_COMPACT", "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ],
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 1000 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -71,11 +69,10 @@
     "color": "light_gray",
     "ammo_type": "nanite_ammo",
     "default_ammo": "nanite_blade",
-    "capacity": 250,
-    "count": 250,
     "reliability": 10,
     "reload_time": 0,
     "flags": [ "MAG_COMPACT", "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ],
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 250 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -105,6 +102,7 @@
     "reliability": 10,
     "reload_time": 0,
     "flags": [ "MAG_COMPACT", "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ],
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_deathcloud_ammo": 5 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -128,9 +126,9 @@
     "symbol": "#",
     "color": "light_gray",
     "ammo_type": "nanite_ammo",
-    "capacity": 0,
     "reliability": 10,
     "reload_time": 0,
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 1 } } ],
     "flags": [ "MAG_COMPACT", "NO_UNLOAD", "NO_RELOAD", "TRADER_AVOID" ]
   }
 ]

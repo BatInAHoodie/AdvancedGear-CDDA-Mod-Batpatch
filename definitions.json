@@ -13,20 +13,24 @@
       "CSC_NANO_VEHICLE",
       "CSC_NANO_OTHER"
     ]
-  },{
+  },
+  {
     "type": "MONSTER_FACTION",
     "name": "nanotech_guards",
     "neutral": [ "science" ]
-  },{
+  },
+  {
     "type": "SPECIES",
     "id": "NANOTECH"
-  },{
+  },
+  {
     "type" : "material",
     "ident" : "nanite",
     "name" : "nanotech",
     "density": 600,
     "bash_resist" : 28,
     "cut_resist" : 40,
+    "bullet_resist": 60,
     "bash_dmg_verb" : "compressed",
     "cut_dmg_verb" : "gouged",
     "repaired_with": "3d_resin_metal",
@@ -46,42 +50,20 @@
       { "immune": true },
       { "fuel": 0, "smoke": 0, "burn": 1, "chance": 5 }
     ]
-  },{
+  },
+  {
       "type" : "tool_quality",
       "id" : "NANOTECH",
       "name" : "nanotech"
-  },{
+  },
+  {
       "type" : "tool_quality",
       "id" : "NANO_FAB",
       "name" : "nanite fabrication"
-  },{
+  },
+  {
       "type" : "tool_quality",
       "id" : "NANO_PRO",
       "name" : "nanite programming"
-  },{
-      "type" : "ammunition_type",
-      "id" : "3d_resin",
-      "name" : "fabrication feedstock",
-      "default" : "3d_resin"
-  },{
-    "type" : "ammunition_type",
-    "id" : "nanite",
-    "name" : "nanites",
-    "default" : "nanite_cluster"
-  },{
-    "type" : "ammunition_type",
-    "id" : "metal_nanopowder",
-    "name" : "metal nanopowder",
-    "default" : "metal_nanopowder"
-  },{
-    "type" : "ammunition_type",
-    "id" : "nanite_ammo",
-    "name" : "nanotech ammo",
-    "default" : "nanite_dart"
-  },{
-    "type" : "ammunition_type",
-    "id" : "nanite_deathcloud_ammo",
-    "name" : "nanotech deathcloud",
-    "default" : "nanite_deathcloud"
   }
 ]

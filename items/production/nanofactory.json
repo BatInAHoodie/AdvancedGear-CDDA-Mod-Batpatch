@@ -10,10 +10,13 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ",",
     "color": "yellow",
-    "ammo": "battery",
-    "max_charges": 1000,
-    "flags": [ "WATCH", "ALARMCLOCK", "NO_UNLOAD", "NO_RELOAD", "RECHARGE" ]
-  },{
+    "ammo": [ "battery" ],
+    "flags": [ "WATCH", "ALARMCLOCK", "NO_UNLOAD", "NO_RELOAD", "USE_UPS" ],
+	"pocket_data": [
+      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } }
+    ]
+  },
+  {
     "type" : "AMMO",
     "id" : "3d_resin",
     "category" : "ammo",
@@ -30,14 +33,14 @@
     "cutting" : 0,
     "to_hit" : 0,
     "ammo_type" : "3d_resin",
-    "damage" : 0,
-    "pierce" : 0,
+    "damage": { "damage_type": "bullet", "amount": 0 },
     "range" : 0,
     "dispersion" : 0,
     "recoil" : 0,
     "count" : 100,
     "effects" : "NEVER_MISFIRES"
-  },{
+  },
+  {
     "type" : "AMMO",
     "id" : "3d_resin_metal",
     "category" : "ammo",
@@ -54,14 +57,14 @@
     "cutting" : 0,
     "to_hit" : 0,
     "ammo_type" : "3d_resin",
-    "damage" : 0,
-    "pierce" : 0,
+    "damage": { "damage_type": "bullet", "amount": 1 },
     "range" : 0,
     "dispersion" : 0,
     "recoil" : 0,
     "count" : 100,
     "effects" : "NEVER_MISFIRES"
-  },{       
+  },
+  {       
     "type" : "AMMO",
     "id" : "3d_resin_electronic",
     "category" : "ammo",
@@ -78,19 +81,20 @@
     "cutting" : 0,
     "to_hit" : 0,
     "ammo_type" : "3d_resin",
-    "damage" : 0,
-    "pierce" : 0,
+    "damage": { "damage_type": "bullet", "amount": 0 },
     "range" : 0,
     "dispersion" : 0,
     "recoil" : 0,
     "count" : 100,
     "effects" : "NEVER_MISFIRES"
-  },{
+  },
+  {
     "type" : "ammunition_type",
     "id" : "3d_resin",
     "name" : "3D printer stock",
     "default" : "3d_resin"
-  },{
+  },
+  {
     "id": "nanofactory_1",
     "type": "TOOL",
     "symbol": ";",
@@ -107,7 +111,8 @@
     "to_hit": -1,
     "flags": [ "TRADER_AVOID" ],
     "qualities": [["NANO_FAB", 1] ]
-  },{
+  },
+  {
     "id": "nanofactory_exp",
     "type": "TOOL",
     "symbol": ";",
@@ -123,7 +128,8 @@
     "cutting": 0,
     "to_hit": -1,
     "flags": [ "TRADER_AVOID" ]
-  },{
+  },
+  {
     "id": "nano_ammo_fab",
     "type": "TOOL",
     "symbol": ";",
@@ -139,7 +145,8 @@
     "cutting": 0,
     "to_hit": -1,
     "flags": [ "TRADER_AVOID" ]
-  },{
+  },
+  {
     "id": "nanite_power_cell",
     "type": "AMMO",
     "name": "nanotech power cell",
@@ -155,7 +162,8 @@
     "color": "light_gray",
     "ammo_type": "components",
     "flags": [ "TRADER_AVOID" ]
-  },{
+  },
+  {
     "id": "nano_programmer_1",
     "type": "TOOL",
     "symbol": ";",
@@ -183,7 +191,8 @@
         "move_cost": 250
       }
     ]
-  },{
+  },
+  {
     "id": "nanofactory_2",
     "type": "TOOL",
     "symbol": ";",
@@ -200,7 +209,8 @@
     "to_hit": -1,
     "flags": [ "TRADER_AVOID" ],
     "qualities": [["NANO_FAB", 2] ]
-  },{
+  },
+  {
     "id": "nano_programmer_2",
     "type": "TOOL",
     "symbol": ";",
@@ -228,7 +238,8 @@
         "move_cost": 250
       }
     ]
-  },{
+  },
+  {
     "id": "nanofactory_3",
     "type": "TOOL",
     "symbol": ";",
@@ -256,7 +267,8 @@
         "move_cost": 250
       }
     ]
-  },{
+  },
+  {
     "id": "nanofactory_4",
     "type": "TOOL",
     "symbol": ";",

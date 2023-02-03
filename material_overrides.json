@@ -9,6 +9,7 @@
     "acid_resist": 5,
     "fire_resist": 3,
     "elec_resist": 0,
+    "bullet_resist": 5,
     "chip_resist": 20,
     "repaired_with": "steel_chunk",
     "dmg_adj": [ "marked", "dented", "smashed", "shattered" ],
